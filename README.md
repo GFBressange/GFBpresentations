@@ -6,7 +6,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ## try inserting link
 
-[Presentation 1](Presentation_Georges_1.Rmd)
+[Presentation 1](Presentation_Georges_1.html)
 
 ### Markdown
 
