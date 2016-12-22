@@ -1,0 +1,102 @@
+---
+title: "Presentation 1"
+author: "Georges Bressange"
+date: "21/12/2016"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## My new slide
+Some content.
+
+*** 
+A slide without a title.
+
+## Title of the slide
+
+- Bullet 1
+- Bullet 2
+
+1. Item a
+2. Item b
+
+###  top level 
+
+## New slide
+
+Plain text
+
+*italic*
+
+**bold**
+
+`for (i %in% 1:10)`
+
+## New slide
+
+```{r}
+head(mtcars)
+```
+
+```{r, comment = ""}
+head(mtcars )
+```
+
+## New slide with echo TRUE
+
+```{r, comment = "", echo = TRUE}
+head(mtcars )
+```
+
+## New slide with code and no evaluation
+
+```{r, comment = "", echo = TRUE, eval = FALSE}
+head(mtcars )
+```
+
+## New slide with a plot without code
+
+```{r, fig.align='center', fig.cap="My incredible figure"}
+plot(mtcars$wt, mtcars$mpg, xlab = "Weight", ylab = "MPG")
+```
+
+## New slide with a plot with code
+
+```{r, echo = TRUE}
+plot(mtcars$wt, mtcars$mpg, xlab = "Weight", ylab = "MPG")
+```
+
+## New slide with code without the plot
+
+```{r, echo = TRUE, eval = FALSE}
+plot(mtcars$wt, mtcars$mpg, xlab = "Weight", ylab = "MPG")
+```
+
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
